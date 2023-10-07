@@ -1,0 +1,272 @@
+/*Base*/
+ *,*::before{
+    box-sizing: border-box;
+  }
+
+  *,*::after{
+    box-sizing: border-box;
+  }
+
+  html{
+    scroll-behavior:smooth; /*allows the page to scroll smoothly between points*/
+  }
+
+/*General*/
+  h1{
+    font-size: 80px;
+    font-family: Poiret One, Verdana; /*declares text format*/
+    margin: 2%;
+  }
+  
+  h2{
+    font-family: Poiret One, Verdana;
+    font-size: 30px; /*declares text format*/    
+  }
+  
+  a{
+    text-decoration: none; /*removes automatic underline from hyperlinks*/
+  }
+  
+  p, ul, li{
+    overflow: hidden;
+    font-family: Verdana;
+    font-size: 18px;
+    line-height: 20px; /*declares text format*/
+    margin: 0%;
+  }
+  
+  input[type=text] {
+    overflow: auto;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid black;
+    font-family: Verdana;
+    font-size: 18px;
+    line-height: 20px; /*declares text format*/
+  }
+
+  input[type=text]:focus {
+    background-color: rgb(232, 245, 249);
+  }
+
+/*Classes*/
+  .navigationBar{
+    background-color: #95f89c;
+    text-align: center;
+    margin: -8px; /*declares navigation bar style*/
+  }
+  
+  .header{
+    overflow: hidden;
+    margin-left: 5%;
+    margin-top: 2%;
+    line-height: 20px;
+  }
+
+  .title-bar{
+    margin-top: 0%;
+    background-color: #95f89c;
+    height: 5px;
+    width: 95%;
+    border-radius: 20px;
+  }
+
+  .separator-bar{
+    margin-top: 0%;
+    background-color: #b9cfbb;
+    width: 2px;
+    border-radius: 20px;
+    z-index:9;
+  }
+
+  .mainBody{
+    display: flex;
+    overflow: auto;
+    width: 90%;
+    position: relative;
+    top: 28%;
+    left:5%; /*declares body position*/
+    /* border-style: dashed;
+    border-width:1px; */
+    background-color: #FFFFFF;
+    opacity: 1; /*declares body format*/
+  }
+
+  .tasks-names {
+    display: flex;
+    width: 90%;
+    position: relative;
+    top: 20px;
+    left: 5%; /*declares body position*/
+    z-index: 90;
+    /* border-style: dashed;
+    border-width:1px; */
+  }
+
+  .tasks-names > div{
+    width:50%;
+    text-align: center;
+    font-family: Poiret One, Verdana;
+    font-size: 45px;
+    margin: 0%;
+  }
+
+  .tasks-container {
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    width: 50%;
+    /* border-style: dashed;
+    border-width: 1px; */
+    margin: 2.5%;
+    background-color: #FFFFFF;
+    opacity: 1; /*declares body format*/
+  }
+
+  .tasks-container > div{
+    width: 100%;
+    font-size: 16px;
+    font-family: Verdana;
+    text-align: center;
+    border-style: solid;
+    border-width:1px;
+    border-radius:20px;
+    padding: 5%;
+    margin-bottom: 20px;
+  }
+
+/*IDs*/
+  #tasks1{
+    background-color: white;
+  }
+
+  #tasks1 > div{
+    background-color: #82d3ec;
+  }
+  
+  #tasks2 > div{
+    background-color: #8290ec;
+  }
+  
+  #tasks3 > div{
+    background-color: #d382ec;
+  }
+
+  #tasks4 > div{
+    background-color: #ec82e1;
+  }
+
+  #upcoming > div{
+    background-color: #fcab75;
+  }
+
+  #important > div{
+    background-color: #fc7575;
+  }
+
+  #starred > div{
+    background-color: #fcf375;
+  }
+
+/*Other*/
+  .copyrightTag{
+    overflow: hidden;
+    background-color:black;
+    color: white;
+    width:101.5%; /*declares copyright tag format*/
+    padding-top:1.5%;
+    padding-bottom:3%;
+    margin:-1%;
+    text-align:center;
+    position: relative;
+    top: 300px; /*declares copyright tag position*/
+  }	
+
+  .activePage{
+    font-size: 18px;
+    color:#000000;
+    font-weight: 500 /*highlights current page*/
+  }
+  
+  .notActivePage{
+    color: #5a5a5a; /*leaves unactive page as standar colour*/
+  }
+  
+  .notActivePage:hover {
+    color: #000000; /*changes button colour when hovering over with mouse*/
+  }
+  
+  .navigationBarButton {
+    background-color: #95f89c;
+    color: #000000;
+    border: none; /*declares button style*/
+    text-align: center;
+    font-size: 16px;
+    font-family: Verdana;
+    font-weight: 400; /*declares text format*/
+    padding: 3px;
+    margin: 8px;
+    margin-left:110px;
+    margin-right:110px; /*positions button*/
+    cursor: pointer; /*changes cursor icon when over button*/
+    transition: all 0.4s;
+    transition-timing-function: ease-in-out; /*declares transition style*/
+  }
+  
+  .navigationBarButton span {
+    cursor: pointer; /*changes cursor icon when over button*/
+    display: inline-block;
+    position: relative; /*declares button style*/
+    transition: 0.4s;
+    transition-timing-function: ease-in-out; /*declares transition style*/
+  }
+  
+  .navigationBarButton span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0; /*declares button format*/
+    top: 0;
+    right: 0px; /*positions button*/
+    transition: 0.4s;
+    transition-timing-function: ease-in-out; /*declares transition style*/
+  }
+  
+  .navigationBarButton:hover span {
+    padding-right: 25px;
+    font-size: 18px;
+    color:#000000;
+    font-weight: 500 /*changes button format when hovering*/
+  }
+  
+  .navigationBarButton:hover span:after {
+    opacity: 1;
+    right: 0;
+    color:#000000;
+    font-size: 18px;
+    font-weight: 500; /*changes button format when hovering*/
+  }
+  
+  .centeredImage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto; /*declares image position*/
+  }
+  
+  #frontPage{
+    opacity: 1;
+    animation-name: bodyText;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-iteration-count: 1; /*declares front page animation format*/
+    
+  }
+  
+  @keyframes bodyText {
+    0%   { opacity: 0;}
+    25%  { opacity: 0;}
+    75%  { opacity: 0.75;}
+    100% { opacity: 1;} /*declares transitional keyframes in animation*/
+  }
