@@ -9,22 +9,26 @@ const taskList3 = document.getElementById('tasks3');
 const newTaskInput4 = document.getElementById('new-task4');
 const taskList4 = document.getElementById('tasks4');
 
-const ctasks1 = document.querySelectorAll('#tasks1.task-container');
-const ctasks2 = document.querySelectorAll('#tasks2.task-container');
-const ctasks3 = document.querySelectorAll('#tasks3.task-container');
-const ctasks4 = document.querySelectorAll('#tasks4.task-container');
+const ctasks1 = document.querySelectorAll('#tasks1 div');
+const ctasks2 = document.querySelectorAll('#tasks2 div');
+const ctasks3 = document.querySelectorAll('#tasks3 div');
+const ctasks4 = document.querySelectorAll('#tasks4 div');
 
 const formsubmit = document.getElementById('submit');
+const colorarr = [["#B9E1EE", "#71BDCE", "#398799"], ['#D3D1EF', '#BAB6E7', '#5F59A1'],['#F5D4EC', '#F1B1DF', '#94497F'],['#FADDC2', '#F8C08D', '#B37841']]
 
 /*task editors*/
 // Function to add a new task
-function addNewTask(taskInput, taskList) {
+function addNewTask(taskInput, taskList, tasknum) {
     const taskText = taskInput.value.trim();
-
+    let n = tasknum-1;
     if (taskText !== '') {
         const div = document.createElement('div');
         const p = document.createElement('p');
         p.textContent = taskText;
+        let{bg, txt} = getRandomColor(colorarr[n][0], colorarr[n][1], colorarr[n][2]);
+        div.style.background = bg;
+        div.style.color = txt;
         div.appendChild(p);
         taskList.appendChild(div);
         taskInput.value = '';
@@ -37,25 +41,25 @@ function addNewTask(taskInput, taskList) {
 // Event listener to add tasks when Enter key is pressed
 newTaskInput1.addEventListener('keyup', function(event) {
     if (event.key === 'Enter') {
-        addNewTask(newTaskInput1, taskList1);
+        addNewTask(newTaskInput1, taskList1, 1);
     }
 });
 
 newTaskInput2.addEventListener('keyup', function(event) {
     if (event.key === 'Enter') {
-        addNewTask(newTaskInput2, taskList2);
+        addNewTask(newTaskInput2, taskList2, 2);
     }
 });
 
 newTaskInput3.addEventListener('keyup', function(event) {
     if (event.key === 'Enter') {
-        addNewTask(newTaskInput3, taskList3);
+        addNewTask(newTaskInput3, taskList3, 3);
     }
 });
 
 newTaskInput4.addEventListener('keyup', function(event) {
     if (event.key === 'Enter') {
-        addNewTask(newTaskInput4, taskList4);
+        addNewTask(newTaskInput4, taskList4, 4);
     }
 });
 
@@ -66,13 +70,13 @@ newTaskInput4.addEventListener('keyup', function(event) {
 //color3 will always be dark color that is paired with white text
 
 function getRandomColor(color1, color2, color3) {
-    n = Math.random() * 3;
-    if (n == 1){
+    let m = Math.random() * 3;
+    if (m < 1){
         return {bg:color1, txt:"#4C4C4C"};
-    }else if (n == 2){
+    }else if (m < 2){
         return {bg:color2, txt:"#4C4C4C"};
     }else{
-        return {bg:color1, txt:"#FFFFFF"};
+        return {bg:color3, txt:"#FFFFFF"};
     }
 }
 
@@ -86,7 +90,7 @@ ctasks1.forEach(function(element) {
 
 
 ctasks2.forEach(function(element) {
-    let {bg, txt} = getRandomColor("#B9E1EE", "#71BDCE", "#398799");
+    let {bg, txt} = getRandomColor('#D3D1EF', '#BAB6E7', '#5F59A1');
     element.style.backgroundColor = bg;
     element.style.color = txt;
 });
@@ -98,7 +102,7 @@ ctasks3.forEach(function(element) {
 });
 
 ctasks4.forEach(function(element) {
-    let {bg, txt} = getRandomColor("#F5D4EC", "#F1B1DF", "#94497F");
+    let {bg, txt} = getRandomColor('#FADDC2', '#F8C08D', '#B37841');
     element.style.backgroundColor = bg;
     element.style.color = txt;
 });

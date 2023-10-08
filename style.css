@@ -146,22 +146,6 @@
   }
 
 /*IDs*/
-  #tasks1 > div{
-    background-color: #82d3ec;
-  }
-  
-  #tasks2 > div{
-    background-color: #8290ec;
-  }
-  
-  #tasks3 > div{
-    background-color: #d382ec;
-  }
-
-  #tasks4 > div{
-    background-color: #ec82e1;
-  } 
-
   #upcoming > div{
     background-color: #fcab75;
   }
