@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html> 
+	<head>
+		<meta charset="UTF-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Examplify</title>  <!-- displays website title -->
+		<link rel="shortcut icon" type="image/png" href="WebIcon.png">  <!-- displays website favicon -->
+		<link rel= "stylesheet" type = "text/css" href= "style.css"/>  <!-- calls css file -->
+		<link rel="stylesheet"  href="https://fonts.googleapis.com/css?family=Poiret+One"> <!-- google fonts-->
+		<div class="navigationBar" id=top>  <!-- calls navigation bar formats -->
+			<button class= "navigationBarButton"><span><a class="notActivePage" href = "overview.html">Overview</a>  </span></button>
+			<button class= "navigationBarButton"><span><a class="notActivePage" href = "calender.html">Calendar</a></span></button>
+			<button class= "navigationBarButton"><span><a class="notActivePage" href = "tasks.html">Tasks</a></span></button>  <!-- displays navigation bar buttons -->
+		</div>
+        <link href='https://fonts.googleapis.com/css?family=Gaegu' rel='stylesheet'>
+
+	</head>
+    <body>
+        <section class = "header">
+			<h1>New Event</h1>  <!-- prints title -->
+		</section>
+        <form class = "eventInput">
+            <input type="text" id="newEventName" placeholder="New Event Name">
+            <div class = "eventDesc">
+                <div>
+                    <label for="dateOfEvent">Date of Event</label> <br>
+                    <input type="text" id="dateOfEvent" placeholder="9/11"> <br>
+                    <label for="subject">Subject</label><br>
+                    <input type="text" id="subject" placeholder="SUB999">
+                    <label for="difficulty">Difficulty</label><br>
+                    <input type="range" min="1" max="10" class="slider" id="difficulty"><br>
+                    <label for="courseWeight">Course Weight</label><br>
+                    <input type="range" min="1" max="10" class="slider" id="courseWeight"><br>
+                </div>
+                <div id="reminder">
+                    <input type="text" id="details" placeholder="Reminder to self..."> <br>
+                </div>
+            </div>
+            <br>
+            <button type="submit" id="submit"><span><a class="notActivePage" href = "calender.html">Add a New Event!</a>  </span></button> 
+        </form>
+    </body>
+</html>

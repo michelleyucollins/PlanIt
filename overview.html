@@ -1,26 +1,30 @@
 <!DOCTYPE html>
 <html> 
 	<head>
+		<meta charset="UTF-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Examplify</title>  <!-- displays website title -->
 		<link rel="shortcut icon" type="image/png" href="WebIcon.png">  <!-- displays website favicon -->
-	</head>
-	<body>  <!-- displays background image -->
 		<link rel= "stylesheet" type = "text/css" href= "style.css"/>  <!-- calls css file -->
 		<link rel="stylesheet"  href="https://fonts.googleapis.com/css?family=Poiret+One"> <!-- google fonts-->
 		<div class="navigationBar" id=top>  <!-- calls navigation bar formats -->
 			<button class= "navigationBarButton"><span><a class="activePage" href = "overview.html">Overview</a>  </span></button>
-			<button class= "navigationBarButton"><span><a class="notActivePage" href = "#">Calendar</a></span></button>
+			<button class= "navigationBarButton"><span><a class="notActivePage" href = "calender.html">Calendar</a></span></button>
 			<button class= "navigationBarButton"><span><a class="notActivePage" href = "tasks.html">Tasks</a></span></button>  <!-- displays navigation bar buttons -->
 		</div>
-		<div class = "header">
+		<link href='https://fonts.googleapis.com/css?family=Gaegu' rel='stylesheet'>
+	</head>
+	<body>  <!-- displays background image -->
+		
+		<section class = "header">
 			<h1>Overview</h1>  <!-- prints title -->
-			<div class = "title-bar"></div>
-		</div>
-		<div class = "tasks-names" id="frontPage">
-			<div>Upcoming</div> 
-			<div>Important</div>
-			<div>Starred</div>
-		</div>
+			<div class = "title-bar" id = "overview-header"></div>
+		</section>
+		<section class = "tasks-names" id="frontPage">
+			<h2>Upcoming</h2> 
+			<h2>Important</h2>
+			<h2>Starred</h2>
+		</section>
 		<div class = "mainBody" id="frontPage">
 			<div class = "tasks-container" id = "upcoming">  <!-- calls main body format -->
 				<div> 

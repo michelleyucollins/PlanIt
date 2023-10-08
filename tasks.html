@@ -1,30 +1,34 @@
 <!DOCTYPE html>
 <html> 
 	<head>
+		<meta charset="UTF-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Examplify</title>  <!-- displays website title -->
 		<link rel="shortcut icon" type="image/png" href="WebIcon.png">  <!-- displays website favicon -->
-	</head>
-	<body>  <!-- displays background image -->
 		<link rel= "stylesheet" type = "text/css" href= "style.css"/>  <!-- calls css file -->
 		<link rel="stylesheet"  href="https://fonts.googleapis.com/css?family=Poiret+One"> <!-- google fonts-->
 		<div class="navigationBar" id=top>  <!-- calls navigation bar formats -->
 			<button class= "navigationBarButton"><span><a class="notActivePage" href = "overview.html">Overview</a>  </span></button>
-			<button class= "navigationBarButton"><span><a class="notActivePage" href = "#">Calendar</a></span></button>
+			<button class= "navigationBarButton"><span><a class="notActivePage" href = "calender.html">Calendar</a></span></button>
 			<button class= "navigationBarButton"><span><a class="activePage" href = "tasks.html">Tasks</a></span></button>  <!-- displays navigation bar buttons -->
 		</div>
-		<div class = "header">
+		<link href='https://fonts.googleapis.com/css?family=Gaegu' rel='stylesheet'>
+
+	</head>
+	<body>  <!-- displays background image -->
+		<section class = "header">
 			<h1>Tasks</h1>  <!-- prints title -->
-			<div class = "title-bar"></div>
-		</div>
-		<div class = "tasks-names" id="frontPage">
-			<div>School</div> 
-			<div>pipe</div>
-			<div>ballerhood</div>
-			<div>baba bag</div> 
-		</div>
-		<div class = "mainBody" id="frontPage">
-			<div class = "tasks-container" id = "tasks1">  <!-- calls main body format -->
-				<div id = "add-task1"> 
+			<div class = "title-bar" id = "task-header"></div>
+		</section>
+		<section class = "tasks-names" id="frontPage">
+			<h2>School</h2> 
+			<h2>pipe</h2>
+			<h2>ballerhood</h2>
+			<h2>baba bag</h2> 
+		</section>
+		<section class = "mainBody" id="frontPage">
+			<div id = "tasks1" class = "tasks-container">  <!-- calls main body format -->
+				<div id = "add-task1" > 
 					<input type="text" id="new-task1" placeholder="Enter a new task">
 				</div>
 				<div> 
@@ -35,7 +39,7 @@
 				</div>
 			</div>
 			<div class = "separator-bar"></div>
-			<div class = "tasks-container" id = "tasks2">  <!-- calls main body format -->
+			<div id = "tasks2" class = "tasks-container">  <!-- calls main body format -->
 				<div id = "add-task2"> 
 					<input type="text" id="new-task2" placeholder="Enter a new task">
 				</div>
@@ -47,7 +51,7 @@
 				</div>
 			</div>
 			<div class = "separator-bar"></div>
-			<div class = "tasks-container" id = "tasks3">  <!-- calls main body format -->
+			<div id = "tasks3" class = "tasks-container">  <!-- calls main body format -->
 				<div id = "add-task3"> 
 					<input type="text" id="new-task3" placeholder="Enter a new task">
 				</div>
@@ -59,7 +63,7 @@
 				</div>
 			</div>
 			<div class = "separator-bar"></div>
-			<div class = "tasks-container" id = "tasks4">  <!-- calls main body format -->
+			<div id = "tasks4" class = "tasks-container">  <!-- calls main body format -->
 				<div id = "add-task4"> 
 					<input type="text" id="new-task4" placeholder="Enter a new task">
 				</div>
@@ -70,7 +74,7 @@
 					<p> Bag yo baba </p>  <!-- prints paragraph -->
 				</div>
 			</div>
-		</div>
+		</section>
 		<div class="copyrightTag">  <!-- calls copyright tag format -->
 			<p style="font-size:14px"><b>Copyright © 2023 Examplify Inc. All rights reserved.</b></p>  <!-- prints copyright tag-->
 			<p style="font-size:10px"><b>Made with love by Stone and the other guy</b></p>  <!-- prints copyright tag-->

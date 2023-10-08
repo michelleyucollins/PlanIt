@@ -9,6 +9,14 @@ const taskList3 = document.getElementById('tasks3');
 const newTaskInput4 = document.getElementById('new-task4');
 const taskList4 = document.getElementById('tasks4');
 
+const ctasks1 = document.querySelectorAll('#tasks1.task-container');
+const ctasks2 = document.querySelectorAll('#tasks2.task-container');
+const ctasks3 = document.querySelectorAll('#tasks3.task-container');
+const ctasks4 = document.querySelectorAll('#tasks4.task-container');
+
+const formsubmit = document.getElementById('submit');
+
+/*task editors*/
 // Function to add a new task
 function addNewTask(taskInput, taskList) {
     const taskText = taskInput.value.trim();
@@ -50,3 +58,55 @@ newTaskInput4.addEventListener('keyup', function(event) {
         addNewTask(newTaskInput4, taskList4);
     }
 });
+
+//for task 1: '#B9E1EE', '#71BDCE', '#398799'
+//for task 2 '#D3D1EF', '#BAB6E7', '#5F59A1'
+//for task 3: '#F5D4EC', '#F1B1DF', '#94497F'
+//for task 4: '#FADDC2', '#F8C08D', '#B37841'
+//color3 will always be dark color that is paired with white text
+
+function getRandomColor(color1, color2, color3) {
+    n = Math.random() * 3;
+    if (n == 1){
+        return {bg:color1, txt:"#4C4C4C"};
+    }else if (n == 2){
+        return {bg:color2, txt:"#4C4C4C"};
+    }else{
+        return {bg:color1, txt:"#FFFFFF"};
+    }
+}
+
+
+
+ctasks1.forEach(function(element) {
+    let {bg, txt} = getRandomColor("#B9E1EE", "#71BDCE", "#398799");
+    element.style.backgroundColor = bg;
+    element.style.color = txt;
+});
+
+
+ctasks2.forEach(function(element) {
+    let {bg, txt} = getRandomColor("#B9E1EE", "#71BDCE", "#398799");
+    element.style.backgroundColor = bg;
+    element.style.color = txt;
+});
+
+ctasks3.forEach(function(element) {
+    let {bg, txt} = getRandomColor("#F5D4EC", "#F1B1DF", "#94497F");
+    element.style.backgroundColor = bg;
+    element.style.color = txt;
+});
+
+ctasks4.forEach(function(element) {
+    let {bg, txt} = getRandomColor("#F5D4EC", "#F1B1DF", "#94497F");
+    element.style.backgroundColor = bg;
+    element.style.color = txt;
+});
+
+/*event editors*/
+/*directs user back to previous page after submitting the form*/
+formsubmit.onclick = function(event){
+    event.preventDefault();
+    //data processing will need to be put here
+    window.location.replace("calender.html");
+};
