@@ -146,7 +146,7 @@
   }
 
 /*IDs*/
-  #upcoming > div{
+  /*#upcoming > div{
     background-color: #fcab75;
   }
 
@@ -156,7 +156,7 @@
 
   #starred > div{
     background-color: #fcf375;
-  }
+  }*/
 
 /*Other*/
   .copyrightTag{
@@ -435,7 +435,7 @@ tr{
   margin-bottom: 2%;
 }
 
-button[type="submit"] {
+input[type="submit"] {
   margin-top:1%;
   border: 2px solid #494949;
   width: 100%;
@@ -449,7 +449,7 @@ button[type="submit"] {
   font-size:30px;
 }
 
-button[type=submit]{
+input[type=submit]{
   cursor: pointer; /*changes cursor icon when over button*/
   display: inline-block;
   position: relative; /*declares button style*/
@@ -457,7 +457,7 @@ button[type=submit]{
   transition-timing-function: ease-in-out; /*declares transition style*/
 }
 
-button[type=submit]:after {
+input[type=submit]:after {
   content: '\00bb';
   position: absolute;
   opacity: 0; /*declares button format*/
@@ -467,14 +467,14 @@ button[type=submit]:after {
   transition-timing-function: ease-in-out; /*declares transition style*/
 }
 
-button[type=submit]:hover{
+input[type=submit]:hover{
   padding-right: 25px;
   font-size: 18px;
   color:#000000;
   font-weight: 500 /*changes button format when hovering*/
 }
 
-button[type=submit]:hover:after {
+input[type=submit]:hover:after {
   opacity: 1;
   right: 0;
   color:#000000;
