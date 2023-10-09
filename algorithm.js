@@ -8,12 +8,20 @@ const courseweight = [20, 50, 3];
 
 /*finding available time slots*/
 var hoursleft = 0;
-var hoursoccupied = [new Array(15)].map(e => Array(7));
-var events = [new Array(15)].map(e => Array(7));
+var hoursoccupied = [new Array(18)].map(e => Array(7));
+var events = [new Array(18)].map(e => Array(7));
 
-for (i=0; i<15; i++){
+for (i=0; i<18; i++){
     for (j=0; j<7; j++){
-        events[i][j] = document.querySelectorAll('.'+toString(i)+'am #day'+toString(j)+'div div');
+        if (i<6){
+            var schetime = toString(6+i)+'am';
+        } else if (i == 6){
+            var schetime = '12pm';
+        } else{
+            var schetime = toString(i-6)+'pm';
+        }
+        var scheday = 'day'+j;
+        events[i][j] = document.querySelectorAll('.'+schetime+'#'+scheday+'div div');
         if (events[i][j] != NULL){
             hoursoccupied[i][j] = true;
         }else{
@@ -29,7 +37,7 @@ function hrsToWork(current){
     for (i = 0; i < numevents; i++){
         var eventdate = new Date(current.getYear(), dates[i].substring(0,2)*1, dates[i].substring(3,5)*1);
         eventdate.setTime(times[i].substring(3,5)*(1000 * 60)+times[i].substring(0,2)*(1000 * 60 * 60));
-        var disthrs = Math.ceil(Math.abs(eventdate - current)/ (1000 * 60 * 60 * 24)*15);
+        var disthrs = Math.ceil(Math.abs(eventdate - current)/ (1000 * 60 * 60 * 24)*18);
         hrsTillEvent[i] = disthrs;
     }
     return hrsTillEvent;
@@ -92,13 +100,13 @@ function importance(){
 }
 
 function weekschedule(mondate){
-    var dailyschedule =  [new Array(15)].map(e => Array(7));
+    var dailyschedule =  [new Array(18)].map(e => Array(7));
     for (i = 0; i<7; i++){
         var curr  = new Date();
         curr.setTime(mondate.getTime()+i*24*60*60*1000);
         var hrforaday = hrsToWork(curr);
         var availablehrs = new Array();
-        for (n=0; n<15; n++){
+        for (n=0; n<18; n++){
             if (hoursoccupied[n][i] == false){
                 availablehrs.push(n);
             }
@@ -114,23 +122,63 @@ function weekschedule(mondate){
             hrspent[j] = Math.round(likelyhood[j]*totalhr*2)/2; 
         }
         
-        var hrsoccupied = [new Array(15)].map(e => Array(7).fill(false));;
+        var hrsoccupied = [new Array(18)].map(e => Array(7).fill(false));;
         for (j = 0; j< numevents; j++){
-            for (n=0; n<15; n++){
+            for (n=0; n<18; n++){
                 if (hoursoccupied[n][i] == false && hrsoccupied == false){
                     if(hrspent[j]>=1){
-                        dailyschedule[n][i] = eventname[j];
+                        dailyschedule[n][i] = toString(j);
                         hrspent[j] -= 1;
-                    }else if (hrspent[j]>=0.5){
-                        dailyschedule[n][i] = eventname[j]+eventname[j+1];
+                        hrsoccupied[n][i] = true;
+                    }else if (hrspent[j]>=0.5&&j<numevents-1){
+                        dailyschedule[n][i] = toString(j)+','+toString(j+1);
                         hrspent[j] -= 0.5;
                         hrspent[j+1] -=0.5;
+                        hrsoccupied[n][i] = true;
+                    }else if (hrspent[j]>=0.5){
+                        dailyschedule[n][i] = toString(j);
+                        hrspent[j] -= 0.5;
+                        hrsoccupied[n][i] = true;
                     }
-                    hrsoccupied[n][i] = true;
                 }
             }
         }
     }
     return dailyschedule;
+}
+
+function addWeekPlan(mondate){
+    var schedule = weekschedule(mondate);
+    for (i=0; i<18; i++){
+        for(j=0; j<7; j++){
+            if (i<6){
+                var schetime = toString(6+i)+'am';
+            } else if (i == 6){
+                var schetime = '12pm';
+            } else{
+                var schetime = toString(i-6)+'pm';
+            }
+            var scheday = 'day'+j;
+            var eve = document.querySelector('.'+schetime+'#'+scheday+' .hourevents');
+            if (schedule!=null){
+                addNewEvent(eve, schedule[i][j]);
+            }
+        }
+    }
+}
+
+function addNewEvent(eve, str){
+    const div1 = document.createElement('div');
+    const p2 = document.createElement('p');
+    if (str.includes(',')){
+        const div2 = document.createElement('div');
+        const p2 = document.createElement('p');
+        p1.textcontent = str.substring(0, str.indexOf(","))
+        p2.textcontent = str.substring(str.indexOf(",")+1)
+    }
+    div2.appendChild(p2);
+    div1.appendChild(p1);
+    eve.appendChild(div1);
+    eve.appendChild(div2);
 }
 
