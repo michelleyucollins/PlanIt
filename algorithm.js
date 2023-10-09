@@ -175,10 +175,12 @@ function addNewEvent(eve, str){
         const p2 = document.createElement('p');
         p1.textcontent = str.substring(0, str.indexOf(","))
         p2.textcontent = str.substring(str.indexOf(",")+1)
+        div2.appendChild(p2);
+        div1.appendChild(p1);
+        eve.appendChild(div1);
+        eve.appendChild(div2);
     }
-    div2.appendChild(p2);
     div1.appendChild(p1);
     eve.appendChild(div1);
-    eve.appendChild(div2);
 }
 
