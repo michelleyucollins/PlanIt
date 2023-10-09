@@ -435,6 +435,13 @@ tr{
   margin-bottom: 2%;
 }
 
+#eventTime{
+  background:#FFFFFF;
+  border: none;
+  border-radius: 20px;
+  margin-bottom: 2%;
+}
+
 input[type="submit"] {
   margin-top:1%;
   border: 2px solid #494949;
@@ -506,6 +513,7 @@ input[type=submit]:hover:after {
   border: none;
   border-radius: 20px;
   background: #FFFFFF;
+  height: 65%;
 }
 
 #newEventName{

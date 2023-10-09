@@ -20,20 +20,24 @@
 			<h1>New Event</h1>  <!-- prints title -->
 		</section>
         <form class = "eventInput">
-            <input type="text" id="newEventName" placeholder="New Event Name">
+            <input type="text" id="newEventName" placeholder="New Event Name" required>
             <div class = "eventDesc">
                 <div>
                     <label for="dateOfEvent">Date of Event</label> <br>
-                    <input type="text" id="dateOfEvent" placeholder="9/11"> <br>
-                    <label for="subject">Subject</label><br>
-                    <input type="text" id="subject" placeholder="SUB999">
+                    <input type="text" id="dateOfEvent" placeholder="2001/09/11" pattern="\d{4}/\d{2}/\d{2}" required> <br>
+                    <label for="eventTime">Time</label><br>
+                    <input type="text" id="eventTime" placeholder="08:30" pattern="\d{2}:\d{2}" required><br>
                     <label for="difficulty">Difficulty</label><br>
                     <input type="range" min="1" max="10" class="slider" id="difficulty"><br>
                     <label for="courseWeight">Course Weight</label><br>
                     <input type="range" min="1" max="100" class="slider" id="courseWeight"><br>
                 </div>
-                <div id="reminder">
-                    <input type="text" id="details" placeholder="Reminder to self..."> <br>
+                <div>
+                    <label for="subject">Subject</label><br>
+                    <input type="text" id="subject" placeholder="SUB999">
+                    <div id="reminder">
+                        <input type="text" id="details" placeholder="Reminder to self..."> <br>
+                    </div>
                 </div>
             </div>
             <br>
