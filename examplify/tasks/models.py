@@ -7,6 +7,7 @@ class Task(models.Model):
     title = models.CharField(max_length=200)
     type = models.CharField(max_length=200)
     subject = models.CharField(max_length=200)
+    categoryIndex = models.IntegerField()
     text = models.TextField()
     created_date = models.DateTimeField(default=timezone.now)
 

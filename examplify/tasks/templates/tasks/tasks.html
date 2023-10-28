@@ -24,63 +24,60 @@
 		</section>
 		<section class = "tasks-names" id="frontPage">
 			<h2>School</h2> 
-			<h2>pipe</h2>
-			<h2>ballerhood</h2>
-			<h2>baba bag</h2> 
+			<h2>Clubs</h2>
+			<h2>Work</h2>
+			<h2>Personal</h2> 
 		</section>
 		<section class = "mainBody" id="frontPage">
 			<div id = "tasks1" class = "tasks-container">  <!-- calls main body format -->
 				<div id = "add-task1" > 
 					<input type="text" id="new-task1" placeholder="Enter a new task">
 				</div>
-				<div> 
-					<p> homework </p>  <!-- prints paragraph -->
+				{% for task in school_tasks %}
+				<div data-task-id="{{ task.id }}">
+					<p>{{task.text}}</p>
 				</div>
-				<div> 
-					<p> laundry </p>  <!-- prints paragraph -->
-				</div>
+				{% endfor %}
 			</div>
 			<div class = "separator-bar"></div>
 			<div id = "tasks2" class = "tasks-container">  <!-- calls main body format -->
 				<div id = "add-task2"> 
 					<input type="text" id="new-task2" placeholder="Enter a new task">
 				</div>
-				<div>
-					<p> lay pipe </p>  <!-- prints paragraph -->
+				{% for task in clubs_tasks %}
+				<div data-task-id="{{ task.id }}">
+					<p>{{task.text}}</p>
 				</div>
-				<div>
-					<p> congrajulstion! congrajulstion! congrajulstion!</p>  <!-- prints paragraph -->
-				</div>
+				{% endfor %}
 			</div>
 			<div class = "separator-bar"></div>
 			<div id = "tasks3" class = "tasks-container">  <!-- calls main body format -->
 				<div id = "add-task3"> 
 					<input type="text" id="new-task3" placeholder="Enter a new task">
 				</div>
-				<div>  
-					<p> ball in </p>  <!-- prints paragraph -->
+				{% for task in work_tasks %}
+				<div data-task-id="{{ task.id }}">
+					<p>{{task.text}}</p>
 				</div>
-				<div>
-					<p> ball up </p>  <!-- prints paragraph -->
-				</div>
+				{% endfor %}
 			</div>
 			<div class = "separator-bar"></div>
 			<div id = "tasks4" class = "tasks-container">  <!-- calls main body format -->
 				<div id = "add-task4"> 
 					<input type="text" id="new-task4" placeholder="Enter a new task">
 				</div>
-				<div>
-					<p> baba in a bag</p>  <!-- prints paragraph -->
+				{% for task in personal_tasks %}
+				<div data-task-id="{{ task.id }}">
+					<p>{{task.text}}</p>
 				</div>
-				<div> 
-					<p> Bag yo baba </p>  <!-- prints paragraph -->
-				</div>
+				{% endfor %}
 			</div>
 		</section>
 		<div class="copyrightTag">  <!-- calls copyright tag format -->
 			<p style="font-size:14px"><b>Copyright © 2023 Examplify Inc. All rights reserved.</b></p>  <!-- prints copyright tag-->
 			<p style="font-size:10px"><b>Made with love by Stone and the other guy</b></p>  <!-- prints copyright tag-->
 		</div>
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 		<script src="{% static 'javascript/scripttasks.js' %}"></script>
 	</body>
 </html>
@@ -93,3 +90,17 @@
         <p>{{ post.text|linebreaksbr }}</p>
     </article>
 {% endfor %} -->
+
+<!-- <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const taskForm = document.getElementById('task-form');
+        const taskInput = document.getElementById('id_text');
+
+        taskInput.addEventListener('keydown', function(event) {
+            if (event.key === 'Enter' && !event.shiftKey) {
+                event.preventDefault(); // Prevent form submission
+                taskForm.submit(); // Submit the form
+            }
+        });
+    });
+</script> -->

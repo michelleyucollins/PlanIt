@@ -22,22 +22,212 @@ function addNewTask(taskInput, taskList, tasknum) {
     const taskText = taskInput.value.trim();
     let n = tasknum-1;
     if (taskText !== '') {
-        const div = document.createElement('div');
-        const p = document.createElement('p');
-        p.textContent = taskText;
-        let{bg, txt} = getRandomColor(colorarr[n][0], colorarr[n][1], colorarr[n][2]);
-        div.style.background = bg;
-        div.style.color = txt;
-        div.appendChild(p);
-        taskList.appendChild(div);
-        taskInput.value = '';
+        // Get the CSRF token
+        const csrftoken = getCSRFToken();
+
+        // Make an AJAX request to create a new task
+        $.ajax({
+            type: 'POST',
+            url: '/tasks/create_task/',
+            data: {
+                text: taskText,
+                category: n
+            },
+            headers: {
+                'X-CSRFToken': csrftoken  // Include the CSRF token in the request headers
+            },
+            success: function (data) {
+                const newTaskId = data.id;
+
+                const div = document.createElement('div');
+                div.setAttribute('data-task-id', newTaskId);
+                const p = document.createElement('p');
+                p.textContent = taskText;
+                let { bg, txt } = getRandomColor(colorarr[n][0], colorarr[n][1], colorarr[n][2]);
+                div.style.background = bg;
+                div.style.color = txt;
+                div.appendChild(p);
+                taskList.appendChild(div);
+                taskInput.value = '';
+            },
+            error: function (xhr, errmsg, err) {
+                // Handle errors.
+            }
+        });
     }
 }
 
-// // Event listener for the "Add Task" button
-// addTaskButton.addEventListener('click', addNewTask);
+// Function to get the CSRF token from the cookies
+function getCSRFToken() {
+    const cookieValue = document.cookie
+        .split('; ')
+        .find(cookie => cookie.startsWith('csrftoken='));
+    if (cookieValue) {
+        return cookieValue.split('=')[1];
+    }
+    return '';
+}
 
-// Event listener to add tasks when Enter key is pressed
+function saveTaskToDjango(taskText, categoryIndex) {
+    // Get the CSRF token
+    const csrftoken = getCSRFToken();
+    // Make an AJAX request to your Django view to save the task data.
+    $.ajax({
+        type: 'POST',
+        url: '/tasks/create_task/',  // Replace with the actual URL.
+        data: {
+            text: taskText,
+            category: categoryIndex  // Send the category index to your Django view.
+        },
+        headers: {
+            'X-CSRFToken': csrftoken  // Include the CSRF token in the request headers
+        },
+        success: function (data) {
+            // Handle success (e.g., update the frontend task list if needed).
+        },
+        error: function (xhr, errmsg, err) {
+            // Handle errors.
+        }
+    });
+}
+
+// Double-click event to toggle task editing
+taskList1.addEventListener('dblclick', function (event) {
+    const target = event.target;
+    if (target.tagName === 'P') {
+        target.contentEditable = true;
+        target.focus();
+    }
+});
+
+// Keydown event to save changes on Enter and delete the task on empty text
+taskList1.addEventListener('keydown', function (event) {
+    const target = event.target;
+    if (event.key === 'Enter' && target.tagName === 'P' && target.textContent.trim() === '') {
+        target.contentEditable = false;
+        deleteTaskFromDjango(target);
+    }
+    else if (event.key === 'Enter' && target.tagName === 'P') {
+        target.contentEditable = false;
+        saveEditedTaskToDjango(target); // Save the edited task
+    }
+
+});
+
+taskList2.addEventListener('dblclick', function (event) {
+    const target = event.target;
+    if (target.tagName === 'P') {
+        target.contentEditable = true;
+        target.focus();
+    }
+});
+
+// Keydown event to save changes on Enter and delete the task on empty text
+taskList2.addEventListener('keydown', function (event) {
+    const target = event.target;
+    if (event.key === 'Enter' && target.tagName === 'P' && target.textContent.trim() === '') {
+        target.contentEditable = false;
+        deleteTaskFromDjango(target);
+    }
+    else if (event.key === 'Enter' && target.tagName === 'P') {
+        target.contentEditable = false;
+        saveEditedTaskToDjango(target); // Save the edited task
+    }
+
+});
+
+taskList3.addEventListener('dblclick', function (event) {
+    const target = event.target;
+    if (target.tagName === 'P') {
+        target.contentEditable = true;
+        target.focus();
+    }
+});
+
+// Keydown event to save changes on Enter and delete the task on empty text
+taskList3.addEventListener('keydown', function (event) {
+    const target = event.target;
+    if (event.key === 'Enter' && target.tagName === 'P' && target.textContent.trim() === '') {
+        target.contentEditable = false;
+        deleteTaskFromDjango(target);
+    }
+    else if (event.key === 'Enter' && target.tagName === 'P') {
+        target.contentEditable = false;
+        saveEditedTaskToDjango(target); // Save the edited task
+    }
+});
+
+taskList4.addEventListener('dblclick', function (event) {
+    const target = event.target;
+    if (target.tagName === 'P') {
+        target.contentEditable = true;
+        target.focus();
+    }
+});
+
+// Keydown event to save changes on Enter and delete the task on empty text
+taskList4.addEventListener('keydown', function (event) {
+    const target = event.target;
+    if (event.key === 'Enter' && target.tagName === 'P' && target.textContent.trim() === '') {
+        target.contentEditable = false;
+        deleteTaskFromDjango(target);
+    }
+    else if (event.key === 'Enter' && target.tagName === 'P') {
+        target.contentEditable = false;
+        saveEditedTaskToDjango(target); // Save the edited task
+    }
+
+});
+
+// Function to save the edited task to Django
+function saveEditedTaskToDjango(pElement) {
+    const taskText = pElement.textContent.trim();
+    // Add AJAX request to save the edited text to Django
+
+    $.ajax({
+        type: 'POST',
+        url: '/tasks/update_task/',
+        data: {
+            id: pElement.parentElement.getAttribute('data-task-id'),
+            text: taskText,
+        },
+        success: function (data) {
+            // Handle success
+        },
+        error: function (xhr, errmsg, err) {
+            // Handle errors
+        }
+    });
+}
+
+// Function to delete the task from Django
+function deleteTaskFromDjango(pElement) {
+    const taskId = pElement.parentElement.getAttribute('data-task-id');
+    const taskDiv = pElement.parentElement;
+    
+    if (!taskId) {
+        console.error('Task ID not provided');
+        return;
+    }
+
+    const requestData = {
+        id: taskId
+    };
+
+    $.ajax({
+        type: 'DELETE',
+        url: '/tasks/delete_task/',
+        data: JSON.stringify(requestData), // Convert to JSON string
+        contentType: 'application/json', // Specify content type
+        success: function (data) {
+            taskDiv.remove();
+        },
+        error: function (xhr, errmsg, err) {
+            console.error('Error:', xhr.status, errmsg);
+        }
+    });
+}
+
 newTaskInput1.addEventListener('keyup', function(event) {
     if (event.key === 'Enter') {
         addNewTask(newTaskInput1, taskList1, 1);
@@ -61,6 +251,73 @@ newTaskInput4.addEventListener('keyup', function(event) {
         addNewTask(newTaskInput4, taskList4, 4);
     }
 });
+
+// function updateTaskListFromDjango(taskList, categoryIndex) {
+//     // Get the CSRF token
+//     const csrftoken = getCSRFToken();
+
+//     // Make an AJAX request to fetch the updated task data from Django
+//     $.ajax({
+//         type: 'GET',
+//         url: '/tasks/get_tasks/',  // Replace with the actual URL to retrieve tasks
+//         data: {
+//             category: categoryIndex  // Send the category index to your Django view.
+//         },
+//         headers: {
+//             'X-CSRFToken': csrftoken
+//         },
+//         success: function (data) {
+//             // Handle success
+//             if ('tasks' in data) {
+//                 const taskListData = data.tasks;
+//                 // Iterate through the retrieved tasks and add them to the taskList
+//                 taskListData.forEach(function (taskText) {
+//                     const div = document.createElement('div');
+//                     const p = document.createElement('p');
+//                     p.textContent = taskText;
+//                     let{bg, txt} = getRandomColor(colorarr[categoryIndex][0], colorarr[categoryIndex][1], colorarr[categoryIndex][2]);
+//                     div.style.background = bg;
+//                     div.style.color = txt;
+//                     div.appendChild(p);
+//                     taskList.appendChild(div);
+//                 });
+//             }
+//         },
+//         error: function (xhr, errmsg, err) {
+//             // Handle errors.
+//         }
+//     });
+// }
+
+// newTaskInput1.addEventListener('keyup', function (event) {
+//     if (event.key === 'Enter') {
+//         const taskText = newTaskInput1.value.trim();
+//         if (taskText !== '') {
+//             const n = 0;  // Change to the appropriate category index
+//             const csrftoken = getCSRFToken();
+//             $.ajax({
+//                 type: 'POST',
+//                 url: '/tasks/create_task/',  // Replace with the actual URL.
+//                 data: {
+//                     text: taskText,
+//                     category: n
+//                 },
+//                 headers: {
+//                     'X-CSRFToken': csrftoken
+//                 },
+//                 success: function (data) {
+//                     // After successfully saving, update the task list
+//                     newTaskInput1.value = '';  // Clear the input field
+//                     updateTaskListFromDjango(taskList1, n);
+                    
+//                 },
+//                 error: function (xhr, errmsg, err) {
+//                     // Handle errors.
+//                 }
+//             });
+//         }
+//     }
+// });
 
 //for task 1: '#B9E1EE', '#71BDCE', '#398799'
 //for task 2 '#D3D1EF', '#BAB6E7', '#5F59A1'

@@ -6,9 +6,8 @@ from . import views
 app_name = "tasks"
 urlpatterns = [
     path("", views.index, name="tasks"),
-    path("<int:question_id>/", views.detail, name="detail"),
-    # ex: /polls/5/results/
-    path("<int:question_id>/results/", views.results, name="results"),
-    # ex: /polls/5/vote/
-    path("<int:question_id>/vote/", views.vote, name="vote"),
+    path("create_task/", views.create_task, name="create_task"),
+    path("update_task/", views.update_task, name="update_task"),
+    path("delete_task/", views.delete_task, name="delete_task"),
+    # path("get_tasks/", views.get_tasks, name="get_tasks"),
 ]
