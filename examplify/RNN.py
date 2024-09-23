@@ -5,6 +5,14 @@ import string
 import pandas as pd
 import numpy as np
 
+
+'''
+To run this code, type 
+python -m examplify.RNN 
+into the terminal while in the PLANIT folder
+'''
+
+
 # Hyperparameters
 input_size = 36  # 26 letters + 10 digits
 hidden_size = 128
@@ -91,7 +99,7 @@ class RNNModel(nn.Module):
         return self.sigmoid(out)  
 
 # Import training data from CSV
-training_data = load_data('past_avgs_UTSG.csv',2)
+training_data = load_data('data/past_avgs_UTSG.csv',2)
 
 # Model, loss function, optimizer
 model = RNNModel(input_size, embedding_dim, hidden_size, output_size, num_layers)
@@ -116,7 +124,7 @@ for epoch in range(num_epochs):
 
 # Test the model 
 # Load testing data 
-testing_data = load_data('past_avgs_UTM.csv',3)
+testing_data = load_data('data/past_avgs_UTM.csv',3)
 testing_data = [(course, encode_course_avg(avg)) for course, avg in testing_data]
 all_differences = []
 
