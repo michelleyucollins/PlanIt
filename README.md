@@ -1,4 +1,4 @@
-# Examplify
+# PlanIt
 
 Exploring the capacity of using Neural Networks and Algorithms to dynamically schedule University of Toronto student schedules.
 
