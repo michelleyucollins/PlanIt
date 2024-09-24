@@ -8,7 +8,7 @@ import numpy as np
 
 '''
 To run this code, type 
-python -m examplify.RNN 
+python -m PlanIt.RNN 
 into the terminal while in the PLANIT folder
 '''
 
@@ -21,7 +21,7 @@ num_layers = 1
 embedding_dim = 16
 sequence_length = 6
 learning_rate = 0.001
-num_epochs = 1000
+num_epochs = 200
 
 def load_data(csv_file, avg_col):
     df = pd.read_csv(csv_file, usecols=[0, avg_col], header=0)
@@ -126,6 +126,7 @@ for epoch in range(num_epochs):
 # Load testing data 
 testing_data = load_data('data/past_avgs_UTM.csv',3)
 testing_data = [(course, encode_course_avg(avg)) for course, avg in testing_data]
+testing_data.append(('ECE286', encode_course_avg('B')))
 all_differences = []
 
 for code, avg in testing_data:
@@ -136,8 +137,8 @@ for code, avg in testing_data:
         all_differences.append(predicted_difficulty.item()-float(avg))
         print(f'Predicted difficulty for {test_code}: {predicted_difficulty.item():.4f}, Actual difficulty = {avg}. Difference = {predicted_difficulty.item()-float(avg):.4f}')
 
-testing_error = np.square(all_differences).mean() 
+testing_error = np.sqrt(np.square(all_differences).sum())/len(all_differences)
 print(f'Mean Squared error = {testing_error}')
 
-model_path = 'examplify/rnn_model'
+model_path = 'PlanIt/rnn_model'
 torch.save(model.state_dict(), model_path)
