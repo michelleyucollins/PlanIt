@@ -1,228 +1,199 @@
-Course Code,Semester,Course Average,Course Coordinator
-ECO101,Fall 2022,C+,
-MUN101,Fall 2022,A-,
-RSM100,Fall 2022,B-,
-STA237,Fall 2022,C,
-CSC110,Fall 2022,B+,
-STA130,Fall 2022,B-,
-AST101,Fall 2022,C+,
-CHM135,Fall 2022,B-,
-BIO120,Fall 2022,B-,
-MAT135,Fall 2022,B-,
-PHL245,Fall 2022,B-,
-MAT223,Fall 2022,B,
-APM346,Fall 2022,C+,
-HPS203,Fall 2022,B,
-PHY407,Fall 2022,B+,
-PHL273,Fall 2022,B-,
-ENV100,Fall 2022,B,
-CSC111,Winter 2023,A-,
-MAT137,Winter 2023,C,xiaoyue cui
-MAT223,Winter 2023,B-,
-PSY100,Winter 2023,C+,
-MAT224,Winter 2023,C+,
-MAT235,Winter 2023,C+,
-BIO220,Winter 2023,B-,
-Bio260,Winter 2023,B-,
-CHM136,Winter 2023,C+,
-NFS284,Winter 2023,B,
-ECO102,Winter 2023,C+,
-PSY493,Winter 2023,B,
-CAR315,Winter 2023,A- ,
-HIS250,Fall/Winter 2023,C+,
-HIS328,Winter 2023,B,
-HIS331,Fall 2022,B-,
-CSC207,Fall 2022,B+,
-CSC236,Fall 2022,B,
-CSC300,Fall 2022,B+,
-CSC209,Winter 2023,B-,
-CSC258,Winter 2023,B+,
-CSC263,Winter 2023,B,
-ENT200,Winter 2023,B+,
-TRN151,Fall 2022 - Winter 2023,A-,Joy Fitzgibbon
-POL109,Winter 2023,B,David Polansky
-TRN152,Fall 2022 - Winter 2023,B+,Arne Kislenko
-GER400,Fall 2022,A-,
-JSC270,WInter 2023,A-,Carolina Nobre
-HIS103,Fall2022/Winter 2023,B-,
-APS110,Fall 2022,B,Scott Ramsay
-APS111,Fall 2022,B-,Jason Bazylak
-CIV100,Fall 2022,C,Michael Seica
-MAT186,Fall 2022,C+,Sean Uppal
-MAT188,Fall 2022,C+,Camelia Karimianpour
-APS105,Winter 2023,B-,Philip Anderson
-APS112,Winter 2023,B+,Chirag Variawa
-ECE110,Winter 2023,C+,Paul Yoo
-MAT187,Winter 2023,B-,Camelia Karimianpour
-MIE100,Winter 2023,C+,Pierre Sullivan
-LIN101,Fall 2022,C+,Nathan Sanders
-LIN101,Winter 2023,B-,Neda Todorovic
-ENG140,Fall 2022 - Winter 2023,B,Adam Hammond
-PSY100,Winter 2023,C+,Ashley Waggoner-Denton
-HPS100,Summer 2022,B,Hakob Barseghyan
-STA261,Winter 2023,C+,Ziteng Cheng
-JWE206,Winter 2023,B-,Cynthia Messenger
-GER150,Winter 2023,B,
-BCH210,Fall 2022,C+,Sian Patterson
-BIO230,Fall 2022,B,
-BMS100 ,Fall 2022,C,
-HMB265,Fall 2022,C+,
-PSL300,Fall 2022,C+,
-BMS201,Winter 2023,C,
-HMB204,Winter 2023,B,
-PSL301,Winter 2023,B-,
-PSY201,Winter 2023,B-,
-HIS314,Winter 2022,B+,
-MAT390,Fall 2022,C+,
-HIS264,Fall 2022,B,
-HIS271,Fall 2022/Winter 2023,B-,
-HIS349,Winter 2023,B-,
-HMB203,Winter 2023,B,
-ENG150,Fall/Winter 2023,B-,
-AST251,Winter 2023,B,
-FSL220,Winter 2023,B-,
-STA255,Winter 2023,C,
-NFS302,Winter 2023,B,
-HMB322,Winter 2023,B+,
-HMB342,Winter 2023,B+,
-Mgy277 ,Fall 2022,B+,
-NFS301,Fall 2022,B+,
-CSC108,Fall 2022,B-,Michelle Craig
-STA256,Winter 2023,C-,
-CSC258,Winter 2023,,
-MAT136,Winter 2023,C+,
-CSC108,Winter 2023,B,
-LIN204,Winter 2023,B-,
-GGR252,Winter 2023,C+,
-CSC148,Winter 2023,B-,
-STA130,Winter 2023,B,
-CSC207,Fall 2022,B+,
-ECO200,Fall/Winter 2023,,
-STA257,Fall 2022,B-,
-IMM250,Winter2023,,
-CSCA67,Fall 2022,C+,Anna Bretcher 
-LINA01,Fall 2022,C+,
-MGY377,Fall 2022,C+,
-CSB331,Winter 2023,B-,
-CSB472,Winter 2023,B,
-CSB457,Winter 2023,A-,
-CSB327,Fall 2021,B+,
-CSB349,Fall 2021,A-,
-BCH440,Winter 2022,B,
-BCH428,Fall 2022,A-,
-BCH448,Fall 2022,A-,
-HIS198,Fall 2021,A-,
-POL195,Fall 2021,A-,
-SDS255,Fall 2021,B,
-VIC114,Fall 2021,B,
-CLA210,Winter 2022,C+,
-HIS108,Winter 2022,C+,
-MAT198,Winter 2022,A-,
-NEW198,Winter 2022,B+,
-RLG107,Winter 2022,B,
-FAH230,Fall 2022,B+,
-HIS243,Fall 2022,B-,
-MST201,Fall 2022,B-,
-HIS222,Winter 2023,C+,
-HIS242,Winter 2023,C+,
-HIS346,Winter 2023,B-,
-ITA332,Winter 2023,B-,
-CIN105,Fall/Winter 2023,C+,
-CIV102,Fall 2018,B-,
-ESC101,Fall 2018,B,
-ESC103,Fall 2018,B-,
-ESC180,Fall 2018,B,
-MAT194,Fall 2018,B,
-PHY180,Fall 2018,B,
-ECE159,Winter 2019,B,
-ESC102,Winter 2019,B+,
-ESC190,Winter 2019,B+,
-MAT185,Winter 2019,B-,
-MAT195,Winter 2019,B-,
-MSE160,Winter 2019,B+,
-APS444,Summer 2019,B+,
-SOC100,Summer 2019,C+,
-ECE212,Fall 2019,B-,
-ECE241,Fall 2019,B-,
-ECE244,Fall 2019,B,
-MAT290,Fall 2019,B,
-MAT291,Fall 2019,C+,
-ECE216,Winter 2020,B-,
-ECE221,Winter 2020,C+,
-ECE231,Winter 2020,B-,
-ECE243,Winter 2020,B,
-ECE297,Winter 2020,B,
-CIV300,Fall 2021,B+,
-ECE302,Fall 2021,C+,
-ECE344,Fall 2021,B,
-ECE345,Fall 2021,B,
-ECE361,Fall 2021,B+,
-APS360,Winter 2022,B-,
-CSC343,Winter 2022,B+,
-ECE311,Winter 2022,C+,
-ECE342,Winter 2022,B-,
-TEP343,Winter 2022,A-,
-ANT253,Fall 2022,B,
-CIN240,Fall 2021,B,
-RSM219,Winter 2022,B+,
-RSM222,Fall 2022,B,
-RSM225,Fall 2022,B,
-RSM270,Fall 2023,B+,
-RSM332,Winter 2023,B,
-ECO220,Winter 2023,C+,
-ECO204,Winter 2023,B,
-CSC108,Winter 2024,B,
-ECO101,Fall 2019,C+,
-HPS110,Fall 2019,B,
-MAT133,Fall 2019 - Winter 2020,B,
-RSM100,Fall 2019,B-,
-RSM219,Fall 2019,B+,
-CLA230,Winter 2020,B,
-ECO102,Winter 2020,B-,
-RSM230,Winter 2020,B+,
-RSM250,Winter 2020,B,
-ECO220,Summer 2020,B-,
-ECO204,Fall 2020 - Winter 2021,C+,
-RSM220,Fall 2020,B,
-MAT136,Winter 2022,B-,
-RSM222,Fall 2020,B,
-MAT135,Fall 2021,B-,
-CHM135,Fall 2021,B,
-BIO120,Fall 2021,B,
-BIO130,Fall 2021,B,
-TRN135,Fall 2021/ Winter 2022,A-,
-TRN136,Fall 2021/ Winter 2022,A-,
-RSM225,Fall 2020,B,
-RSM221,Winter 2021,B,
-CHM136,Fall 2021,B,
-HMB265,Fall 2022,C+,
-BCH210,Fall 2022,C+,
-PSL300,Fall 2022,C+,
-HMB203,Winter 2023,B,
-PSY100,Fall 2022,C+,
-BIO230,Fall 2022,B,
-RSM260,Winter 2021,B+,
-BIO220,Winter 2023,B-,
-IMM250,Winter 2023,B+,
-PHL281,Winter 2023,B-,
-PSL301,Winter 2023,B-,
-SDS279,Winter 2021,A-,
-AST101,Summer 2021,B,
-AST201,Summer 2021,B-,
-ECO320,Fall 2021,B,
-NFS284,Fall 2021,B+,
-RSM320,Fall 2021,B+,
-RSM324,Fall 2021,B+,
-RSM332,Fall 2021,B+,
-RSM270,Winter 2022,B+,
-RSM321,Winter 2022,B-,
-RSM323,Winter 2022,B+,
-RSM333,Winter 2022,B,
-NMC101,Fall 2022,B,
-PCL200,Fall 2022,B,
-RSM326,Fall 2022,B+,
-RSM392,Fall 2022,B+,
-RSM420,Winter 2023,B+,
-RSM422,Winter 2023,B+,
-RSM424,Winter 2023,B+,
-RSM426,Winter 2023,B+,
+Course Code,Semester,Course Average,Course Name
+ECO101,Fall 2022,C+,Principles of Microeconomics
+MUN101,Fall 2022,A-,Global Innovation
+RSM100,Fall 2022,B-,Introduction to Management
+STA237,Fall 2022,C,Probability, Statistics and Data Analysis I
+CSC110,Fall 2022,B+,Foundations of Computer Science I
+STA130,Fall 2022,B-,An Introduction to Statistical Reasoning and Data Science
+AST101,Fall 2022,C+,The Sun and Its Neighbours
+CHM135,Fall 2022,B-,Chemistry: Physical Principles
+BIO120,Fall 2022,B-,Adaptation and Biodiversity
+MAT135,Fall 2022,B-,Calculus I
+PHL245,Fall 2022,B-,Modern Symbolic Logic
+MAT223,Fall 2022,B,Linear Algebra I
+APM346,Fall 2022,C+,Partial Differential Equations
+HPS203,Fall 2022,B,Making Sense of Uncertainty
+PHY407,Fall 2022,B+,Computational Physics
+PHL273,Fall 2022,B-,Environmental Ethics
+ENV100,Fall 2022,B,Introduction to Environmental Studies
+CSC111,Winter 2023,A-,Foundations of Computer Science II
+MAT137,Winter 2023,C,Calculus with Proofs
+MAT223,Winter 2023,B-,Linear Algebra I
+MAT224,Winter 2023,C+,Linear Algebra II
+MAT235,Winter 2023,C+,Multivariable Calculus
+BIO220,Winter 2023,B-,From Genomes to Ecosystems in a Changing World
+BIO260,Winter 2023,B-,Concepts in Genetics
+CHM136,Winter 2023,C+,Introduction to Organic Chemistry I
+NFS284,Winter 2023,B,Basic Human Nutrition
+ECO102,Winter 2023,C+,Principles of Macroeconomics
+CAR315,Winter 2023,A-,Caribbean Foodways Across History, Culture and Diaspora
+HIS250,Fall/Winter 2023,C+,History of Russia
+HIS328,Winter 2023,B,Modern China
+HIS331,Fall 2022,B-,Modern Baltic History
+CSC236,Fall 2022,B,Introduction to the Theory of Computation
+CSC300,Fall 2022,B+,Computers and Society
+CSC209,Winter 2023,B-,Software Tools and Systems Programming
+CSC258,Winter 2023,B+,Computer Organization
+CSC263,Winter 2023,B,Data Structures and Analysis
+ENT200,Winter 2023,B+,Introduction to Entreprenuership
+TRN151,Fall 2022 - Winter 2023,A-,Global Governance
+POL109,Winter 2023,B,Might and Right: Power and Justice in International Relations
+TRN152,Fall 2022 - Winter 2023,B+,Justics & Global Conflict
+GER400,Fall 2022,A-,Advanced German 1
+JSC270,WInter 2023,A-,Data Science I
+HIS103,Fall2022/Winter 2023,B-,Strategy and Statecraft: War and Diplomacy in European History
+APS110,Fall 2022,B,Engineering Chemistry and Materials Science
+CIV102,Fall 2022,B-,Structures & Materials
+ESC101,Fall 2022,B,Praxis I
+ESC103,Fall 2022,B-,Engineering Mathematics & Computation
+ESC180,Fall 2022,B,Introduction to Computer Programming
+ESC194,Fall 2022,B,Calculus I
+PHY180,Fall 2022,B+,Classical Mechanics
+ECE159,Winter 2023,B,Fundamentals of Electric Circuits
+ESC102,Winter 2023,B+,Praxis II
+ESC190,Winter 2023,B,Computer Algorithms & Data Structures
+ESC195,Winter 2023,B-,Calculus II
+MAT185,Winter 2023,B,Linear Algebra
+MSE160,Winter 2023,B,Molecules and Materials
+JRE300,Summer 2023,B-,Fundamentals of Accounting and Finance
+JRE420,Summer 2023,B+,People Management & Organizational Behaviour
+AER210,Fall 2023,B,Vector Calculus & Fluid Mechanics
+CHE260,Fall 2023,B-,Thermodynamics
+ECE253,Fall 2023,B-,Digital & Computer Systems
+ESC203,Fall 2023,B,Engineering and Society
+MAT292,Fall 2023,B-,Ordinary Differential Equations
+PHY293,Fall 2023,B-,Waves and Modern Physics
+BME205,Winter 2024,B+,Fundamentals of Biomedical Engineering
+ECE259,Winter 2024,B-,Electricity and Magnetism
+ESC204,Winter 2024,A-,Praxis III
+PHY294,Winter 2024,B-,Quantum and Thermal Physics
+JRE410,Summer 2024,B,Markets & Competitive Strategy
+APS111,Fall 2022,B-,Engineering Strategies & Practice I
+CIV100,Fall 2022,C,Mechanics
+MAT186,Fall 2022,C+,Calculus I
+MAT188,Fall 2022,C+,Linear Algebra
+APS105,Winter 2023,B-,Computer Fundamentals
+APS112,Winter 2023,B+,Engineering Strategies & Practice II
+ECE110,Winter 2023,C+,Electrical Fundamentals
+MAT187,Winter 2023,B-,Calculus II
+MIE100,Winter 2023,C+,Dynamics
+LIN101,Fall 2022,C+,Introduction to Linguistics: Sound Structure
+ENG140,Fall 2022 - Winter 2023,B,Literature for our Time
+HPS100,Summer 2022,B,Introduction to History and Philosophy of Science and Technology
+STA261,Winter 2023,C+,Probability and Statistics II
+JWE206,Winter 2023,B-,Writing English Essays
+GER150,Winter 2023,B,Introduction to German Culture (E)
+BCH210,Fall 2022,C+,BioChemistry I: Proteins, Lipids, and Metabolism
+BIO230,Fall 2022,B,From Genes to Organism
+BMS100,Fall 2022,C,Introduction to Book & Media Studies
+HMB265,Fall 2022,C+,General & Human Genetics
+PSL300,Fall 2022,C+,Human Physiology I
+BMS201,Winter 2023,C,Information Literacy, Writing, and Research for Book & Media Studies
+HMB204,Winter 2023,B,Introduction to Human Biology
+PSL301,Winter 2023,B-,Human Physiology II
+PSY201,Winter 2023,B-,Statistics I
+HIS314,Winter 2022,B+,Twentieth-Century Quebec
+MAT390,Fall 2022,C+,History of Mathematics up to 1700
+HIS264,Fall 2022,B,Critical Issues in Canadian History
+HIS271,Fall 2022/Winter 2023,B-,American History Since 1607
+HIS349,Winter 2023,B-,History of Britain: Struggle for Power
+HMB203,Winter 2023,B,Introduction to Global Health
+ENG150,Fall/Winter 2023,B-,Literary Traditions
+AST251,Winter 2023,B,Life on Other Worlds
+FSL220,Winter 2023,B-,Intermediate French I
+STA255,Winter 2023,C,Statistical Theory
+NFS302,Winter 2023,B,Nutrition, Athletics, Performance and Behaviour
+HMB322,Winter 2023,B+,Topics in Health & Disease
+HMB342,Winter 2023,B+,Epidemiology of Health & Disease
+MGY277 ,Fall 2022,B+,Introduction to Medical Microbiology
+NFS301,Fall 2022,B+,Nutrition Literacy: Sorting Science from Snake Oil
+CSC108,Fall 2022,B-,Introduction to Computer Programming
+STA256,Winter 2023,C-,Probability and Statistics I
+MAT136,Winter 2023,C+,Integral Calculus
+LIN204,Winter 2023,B-,English Grammer
+GGR252,Winter 2023,C+,Marketing Geography
+CSC148,Winter 2023,B-,Introduction to Computer Science
+STA130,Winter 2023,B,An Introduction to Statistical Reasoning and Data Science
+CSC207,Fall 2022,B+,Software Design
+ECO200,Fall/Winter 2023,Microeconomic Theory
+STA257,Fall 2022,B-,Probability and Statistics I
+CSC367,Fall 2022,C+,Parallel Programming
+MGY377,Fall 2022,C+,Microbiology I: Bacteria
+CSB331,Winter 2023,B-,Advanced Cell Biology
+CSB472,Winter 2023,B,Foundational Discoveries in Genome Biology and Bioinforgraphics: AlphaFold2 and its implications
+CSB457,Winter 2023,A-,Post-transcriptional Gene Regulation
+CSB327,Fall 2021,B+,Extracellular Matrix Dynamics and Associated Pathologies
+CSB349,Fall 2021,A-,Eukaryotic Gene Expression
+BCH440,Winter 2022,B,Protein Homeostasis
+BCH428,Fall 2022,A-,Genomics of Microbial Communities in Human Health and Beyond
+BCH448,Fall 2022,A-,Structure and Function of the Nucleus
+HIS198,Fall 2021,A-,Decolonizing Women's History
+POL195,Fall 2021,A-,First-Year Foundation Seminar: Settler Colonialism and Enduring Indigeneity
+SDS255,Fall 2021,B,Histories of Sexuality
+VIC114,Fall 2021,B,Renaissance in Popular Culture
+CLA210,Winter 2022,C+,Greek and Roman Archeology
+HIS108,Winter 2022,C+,What is History
+MAT198,Winter 2022,A-,Cryptology: The Mathematics of Secrecy and Security
+NEW198,Winter 2022,B+,Myths of French Sensuality
+RLG107,Winter 2022,B,"It's the End of the World as We Know It"
+FAH230,Fall 2022,B+,Renaissance Art and Architecture
+HIS243,Fall 2022,B-,Early Modern Europe (15th-17th Centuries)
+MST201,Fall 2022,B-,Getting Medieval: Myths and Monsters
+HIS222,Winter 2023,C+,African American History from 1865 to the Present
+HIS242,Winter 2023,C+,Europe in the 20th Century
+HIS346,Winter 2023,B-,Rice Sugar and Spice in Southeast Asia: A Hisotry of Food in the Region
+ITA332,Winter 2023,B-,Love in the Renaissance
+CIN105,Fall/Winter 2023,C+,Introduction to Film Study
+SOC100,Summer 2019,C+,Introduction to Sociolofy I: Social Perspectives
+ECE212,Fall 2019,B-,Circuit Analysis
+ECE241,Fall 2019,B-,Digital Systems
+ECE244,Fall 2019,B,Programming Fundamentals
+MAT290,Fall 2019,B,Advanced Engineering Mathematics
+MAT291,Fall 2019,C+,Introduction to Mathematical Physics
+CIV300,Fall 2021,B+,Terrestrial Energy Systems
+ECE302,Fall 2021,C+,Probability and Applications
+ECE344,Fall 2021,B,Operating Systems
+ECE345,Fall 2021,B,Algorithms and Data Structures
+ECE361,Fall 2021,B+,Computer Networks
+APS360,Winter 2022,B-,Applied Fundamentals of Deep Learning
+CSC343,Winter 2022,B+,Introduction to Databases
+ECE311,Winter 2022,C+,Introduction to Control Systems
+ECE342,Winter 2022,B-,Computer Hardware
+TEP343,Winter 2022,A-,Engineering Leadership
+ANT253,Fall 2022,B,Language & Society
+CIN240,Fall 2021,B,Special Topics in Cinema Studies
+RSM219,Winter 2022,B+,Introduction to Financial Accounting
+RSM222,Fall 2022,B,Management Accounting I
+RSM225,Fall 2022,B,Legal Environment of Business I
+RSM270,Fall 2023,B+,Operations Management
+RSM332,Winter 2023,B,Capital Market Theory
+ECO220,Winter 2023,C+,Introduction to Data Analysis and Applied Econometrics
+ECO204,Winter 2023,B,Microeconomic Theory and Applications (for Commerce)
+ECO101,Fall 2019,C+,Principles of Microeconomics
+HPS110,Fall 2019,B,The Science of Human Nature
+BIO130,Fall 2021,B,Molecular and Cell Biology
+TRN135,Fall 2021/ Winter 2022,A-,Science and Social Choice
+TRN136,Fall 2021/ Winter 2022,A-,Canadian Health Policy in the Global Context
+RSM221,Winter 2021,B,Intermediate Financial Accounting II
+PSY100,Fall 2022,C+,Introductory Psychology
+RSM260,Winter 2021,B+,Organizational Behaviour
+IMM250,Winter 2023,B+,The Immune System and Infectious Disease
+PHL281,Winter 2023,B-,Bioethics
+PSL301,Winter 2023,B-,Human Physiology II
+SDS279,Winter 2021,A-,Queer Popular Culture
+AST201,Summer 2021,B-,Stars and Galaxies
+ECO320,Fall 2021,B,Economic Analysis of Law
+NFS284,Fall 2021,B+,Basic Human Nutrition
+RSM320,Fall 2021,B+,Intermediate Financial Accounting III
+RSM324,Fall 2021,B+,Canadian Income Taxation I
+RSM321,Winter 2022,B-,Advanced Financial Accounting Topics
+RSM323,Winter 2022,B+,Auditing I
+RSM333,Winter 2022,B,Corporate Finance
+NMC101,Fall 2022,B,Land of the Pharaohs
+PCL200,Fall 2022,B,Drugs & the Brain
+RSM326,Fall 2022,B+,Data Analytics with Financial Accounting Information
+RSM392,Fall 2022,B+,Strategic Management
+RSM420,Winter 2023,B+,Advanced IT Audit and Data Analytics
+RSM422,Winter 2023,B+,Management Control
+RSM424,Winter 2023,B+,Canadian Income Taxation II
+RSM426,Winter 2023,B+,Critical Thinking Analysis and Decision Making
